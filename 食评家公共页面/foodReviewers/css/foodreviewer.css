@@ -1,0 +1,508 @@
+@import url("reset.css");
+@import url("iconfont/iconfont.css");
+.foodcontainer {
+  width: 60%;
+  margin: 0 auto;
+  position: relative; }
+
+.foodre-head {
+  height: 60px;
+  border-bottom: 1px solid #70a427; }
+  .foodre-head .foodcontainer {
+    height: 100%; }
+
+.foodmenulist {
+  display: none; }
+
+.foodmenulist,
+.foodheadlogo,
+.foodheaduser {
+  position: absolute;
+  top: 0;
+  bottom: 0; }
+
+.foodheadMenu {
+  position: absolute;
+  top: 0; }
+
+.foodheadlogo {
+  left: 0;
+  width: 200px;
+  text-align: center; }
+  .foodheadlogo span {
+    vertical-align: middle;
+    display: block; }
+  .foodheadlogo .logotext {
+    margin-top: 7px;
+    font-size: 27px;
+    margin-bottom: 5px;
+    color: #70a427; }
+  .foodheadlogo .logoslogen {
+    font-size: 12px; }
+
+.foodheadMenu {
+  left: 200px;
+  right: 200px; }
+  .foodheadMenu ul {
+    float: left; }
+    .foodheadMenu ul li {
+      float: left;
+      line-height: 60px; }
+      .foodheadMenu ul li a {
+        padding: 0 15px;
+        display: block;
+        color: #70a427; }
+        .foodheadMenu ul li a:active, .foodheadMenu ul li a:hover {
+          color: #8ccd31;
+          text-decoration: none; }
+
+.foodheaduser {
+  right: 0;
+  width: 200px;
+  text-align: right;
+  line-height: 60px;
+  cursor: pointer; }
+  .foodheaduser span {
+    vertical-align: top;
+    display: inline-block; }
+  .foodheaduser .userimg {
+    margin-right: 5px; }
+    .foodheaduser .userimg img {
+      width: 30px;
+      height: 30px; }
+  .foodheaduser .usernamearea {
+    max-width: 120px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap; }
+  .foodheaduser .down {
+    color: #666;
+    margin-right: 5px; }
+  .foodheaduser .userbox:hover .userFun, .foodheaduser .userbox:active .userFun {
+    display: block; }
+  .foodheaduser .userFun {
+    position: absolute;
+    top: 60px;
+    width: 120px;
+    right: 0;
+    z-index: 2;
+    background: #70a427;
+    display: none; }
+    .foodheaduser .userFun:before {
+      content: '';
+      width: 0;
+      height: 0;
+      overflow: hidden;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid #70a427;
+      position: absolute;
+      right: 30px;
+      top: -10px; }
+    .foodheaduser .userFun > li {
+      line-height: normal;
+      text-align: left; }
+      .foodheaduser .userFun > li a {
+        color: #fff;
+        display: block;
+        margin: 0 10px;
+        border-top: 1px solid #bbb;
+        padding: 10px 0; }
+        .foodheaduser .userFun > li a .iconfont {
+          font-size: 20px;
+          margin-right: 10px; }
+        .foodheaduser .userFun > li a:hover, .foodheaduser .userFun > li a:active {
+          color: #e6e6e6;
+          text-decoration: none; }
+      .foodheaduser .userFun > li:first-child a {
+        border-top: 0; }
+
+.foodre-content {
+  position: relative; }
+
+.traceCodeBox {
+  background: url(images/traceCodebg.png) no-repeat;
+  width: 370px;
+  height: 450px;
+  position: absolute;
+  right: 10%;
+  top: 0;
+  z-index: 1; }
+  .traceCodeBox > p {
+    font-size: 20px;
+    width: 90%;
+    margin: 35% auto 0 auto; }
+  .traceCodeBox .traceCodeArea {
+    height: 40px;
+    background: #fff;
+    position: relative;
+    width: 90%;
+    margin: 20px auto;
+    border: 1px solid #70a427;
+    border-radius: 6px;
+    overflow: hidden;
+    box-sizing: border-box; }
+    .traceCodeBox .traceCodeArea input {
+      width: 100%;
+      border: 0;
+      margin: 0;
+      font-size: 16px;
+      box-sizing: border-box;
+      padding: 11px 110px 11px 10px; }
+    .traceCodeBox .traceCodeArea .searchTeam {
+      position: absolute;
+      right: 0px;
+      top: 0;
+      bottom: 0;
+      vertical-align: middle;
+      font-size: 28px;
+      color: #fff;
+      background: #70a427;
+      font-size: 23px;
+      line-height: 35px; }
+      .traceCodeBox .traceCodeArea .searchTeam .divisionline {
+        vertical-align: top; }
+      .traceCodeBox .traceCodeArea .searchTeam .iconfont {
+        font-size: 26px;
+        color: #fff;
+        vertical-align: middle;
+        cursor: pointer;
+        margin-right: 8px;
+        margin-left: 8px; }
+        .traceCodeBox .traceCodeArea .searchTeam .iconfont:active, .traceCodeBox .traceCodeArea .searchTeam .iconfont:hover {
+          color: #e6e6e6; }
+
+.ntitle {
+  text-align: left;
+  vertical-align: middle;
+  line-height: 60px;
+  position: relative;
+  color: #70a427;
+  font-size: 18px; }
+  .ntitle .newtitletext .iconfont {
+    font-size: 40px; }
+  .ntitle .more {
+    position: absolute;
+    right: 0;
+    color: #70a427; }
+    .ntitle .more:hover, .ntitle .more:active {
+      color: #8ccd31;
+      text-decoration: none; }
+  .ntitle span, .ntitle label {
+    vertical-align: middle; }
+
+.videoList ul {
+  float: left;
+  width: 100%; }
+  .videoList ul li {
+    float: left;
+    width: 33.33%;
+    *width: 33%; }
+    .videoList ul li a {
+      display: block;
+      margin: 10px;
+      position: relative;
+      height: 250px;
+      line-height: 250px;
+      background: #f4f4f4;
+      text-align: center; }
+      .videoList ul li a img {
+        max-width: 100%;
+        max-height: 100%; }
+      .videoList ul li a > span {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        font-size: 70px;
+        text-align: center;
+        color: #fff; }
+      .videoList ul li a:hover, .videoList ul li a:active {
+        text-decoration: none; }
+    .videoList ul li .t1,
+    .videoList ul li .t2 {
+      font-size: 16px;
+      margin-top: 10px;
+      display: block;
+      margin-left: 10px;
+      margin-right: 10px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap; }
+    .videoList ul li .t2 {
+      font-size: 14px;
+      margin-bottom: 10px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap; }
+
+.zixunListArea {
+  width: 70%;
+  float: left; }
+  .zixunListArea > div {
+    margin-right: 15px;
+    margin-left: 10px;
+    margin-bottom: 15px; }
+    .zixunListArea > div .ntitle {
+      border-bottom: 1px solid #bbb; }
+
+.zixunList ul {
+  float: left; }
+  .zixunList ul li {
+    float: left;
+    width: 50%;
+    *width: 49%; }
+    .zixunList ul li a {
+      display: block;
+      margin-right: 30px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      color: #666;
+      font-size: 14px;
+      border-bottom: 1px solid #bbb; }
+      .zixunList ul li a p {
+        color: #333;
+        margin-bottom: 20px;
+        font-size: 16px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap; }
+      .zixunList ul li a img {
+        float: left;
+        width: 127px;
+        height: 93px; }
+      .zixunList ul li a span {
+        height: 76px;
+        overflow: hidden; }
+      .zixunList ul li a span, .zixunList ul li a i {
+        margin-left: 145px;
+        display: block;
+        margin-top: 15px; }
+      .zixunList ul li a i {
+        font-style: normal;
+        color: #999;
+        text-align: right; }
+      .zixunList ul li a:hover, .zixunList ul li a:active {
+        background: #f4f4f4;
+        color: #666;
+        text-decoration: none; }
+    .zixunList ul li:nth-child(even) a {
+      margin-right: 0; }
+
+.propagandachart {
+  width: 30%;
+  *width: 29%;
+  float: right; }
+  .propagandachart > div {
+    margin-left: 25px;
+    margin-right: 10px;
+    text-align: center;
+    margin-top: 60px; }
+    .propagandachart > div ul li {
+      margin-bottom: 10px; }
+      .propagandachart > div ul li a {
+        display: block;
+        text-align: center; }
+        .propagandachart > div ul li a img {
+          max-width: 100%; }
+
+.foodre-footer {
+  background: #70a427; }
+  .foodre-footer .footerline {
+    border-bottom: 1px solid #bbb;
+    padding: 20px 0; }
+    .foodre-footer .footerline > ul {
+      float: left;
+      width: 100%; }
+      .foodre-footer .footerline > ul li {
+        float: left;
+        width: 20%; }
+        .foodre-footer .footerline > ul li p, .foodre-footer .footerline > ul li a {
+          margin-right: 2%;
+          display: block;
+          color: #fff;
+          line-height: 40px; }
+          .foodre-footer .footerline > ul li p:hover, .foodre-footer .footerline > ul li p:active, .foodre-footer .footerline > ul li a:hover, .foodre-footer .footerline > ul li a:active {
+            color: #fff; }
+        .foodre-footer .footerline > ul li > img {
+          width: 100px;
+          height: 100px; }
+  .foodre-footer .footercopayright {
+    text-align: center;
+    padding: 15px 0;
+    color: #fff; }
+
+@media screen and (max-width: 767px) {
+  .foodre-content .ntitle {
+    line-height: 50px; }
+    .foodre-content .ntitle .iconfont {
+      font-size: 30px; }
+  .foodre-content .videoList ul li {
+    width: 50%;
+    *width: 49%; }
+    .foodre-content .videoList ul li a {
+      height: 120px;
+      line-height: 120px; }
+  .foodre-content .zixunListArea,
+  .foodre-content .propagandachart {
+    float: none;
+    width: 100%; }
+    .foodre-content .zixunListArea > div,
+    .foodre-content .propagandachart > div {
+      margin: 10px 0; }
+  .foodre-content .zixunList ul li {
+    width: 100%; }
+    .foodre-content .zixunList ul li a {
+      margin-right: 0; }
+
+  .footerline {
+    display: none; } }
+@media screen and (max-width: 1003px) {
+  .foodre-head {
+    background: #70a427; }
+    .foodre-head .foodcontainer {
+      width: 100%; }
+    .foodre-head .foodmenulist {
+      display: block;
+      color: #fff;
+      z-index: 2;
+      line-height: 60px;
+      font-size: 40px;
+      margin-left: 10px; }
+    .foodre-head .userimg {
+      margin-right: 10px; }
+    .foodre-head .foodheadlogo {
+      width: 100%; }
+    .foodre-head .usernamearea,
+    .foodre-head .down {
+      display: none; }
+    .foodre-head .logotext {
+      color: #fff; }
+    .foodre-head .logoslogen {
+      color: #e6e6e6; }
+    .foodre-head .foodheadMenu {
+      display: none;
+      left: 0;
+      right: 0;
+      top: 60px;
+      z-index: 2; }
+      .foodre-head .foodheadMenu:before {
+        content: '';
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #fff;
+        position: absolute;
+        left: 20px;
+        top: -9px; }
+      .foodre-head .foodheadMenu ul {
+        float: none;
+        background: rgba(255, 255, 255, 0.9); }
+      .foodre-head .foodheadMenu li {
+        float: none;
+        line-height: 44px; }
+        .foodre-head .foodheadMenu li a {
+          border-top: 1px solid #bbb;
+          margin: 0 20px; }
+        .foodre-head .foodheadMenu li:first-child a {
+          border-top: 0; }
+        .foodre-head .foodheadMenu li:active {
+          background: #f2f2f2; }
+
+  .foodre-content .foodcontainer,
+  .foodre-footer .foodcontainer {
+    width: 90%; }
+
+  .ntitle {
+    border-bottom: 1px solid #bbb; }
+
+  .ntitle .more span + span {
+    display: none; }
+  .ntitle .more span:first-child {
+    padding: 1px 5px;
+    border: 2px solid #70a427;
+    border-radius: 6px; }
+
+  .videoList ul li a {
+    height: 200px;
+    line-height: 200px; }
+    .videoList ul li a > span {
+      font-size: 50px; }
+
+  .zixunListArea,
+  .propagandachart {
+    float: none;
+    width: 100%; }
+    .zixunListArea > div,
+    .propagandachart > div {
+      margin: 10px 0; }
+
+  .propagandachart > div ul li {
+    margin-bottom: 10px;
+    float: left;
+    width: 33.3%; }
+    .propagandachart > div ul li a {
+      margin: 0 4px; }
+      .propagandachart > div ul li a img {
+        max-width: 100%; }
+
+  .traceCodeBox {
+    background: none;
+    position: relative;
+    width: 100%;
+    height: 44px;
+    right: 0; }
+    .traceCodeBox > p {
+      display: none; }
+    .traceCodeBox .traceCodeArea {
+      height: 100%;
+      background: #fff;
+      position: relative;
+      width: 100%;
+      margin: 0;
+      border-radius: 0;
+      border: 0; }
+      .traceCodeBox .traceCodeArea input {
+        padding-top: 13px;
+        padding-bottom: 13px; }
+      .traceCodeBox .traceCodeArea .searchTeam {
+        color: #70a427;
+        background: #fff;
+        line-height: 39px; }
+        .traceCodeBox .traceCodeArea .searchTeam .iconfont {
+          font-size: 30px;
+          color: #70a427; }
+          .traceCodeBox .traceCodeArea .searchTeam .iconfont:active, .traceCodeBox .traceCodeArea .searchTeam .iconfont:hover {
+            color: #7eb92c; } }
+@media screen and (min-width: 1004px) {
+  .foodre-head .foodcontainer {
+    width: 100%; }
+
+  .foodheadMenu {
+    display: block !important; }
+
+  .foodre-footer .foodcontainer,
+  .foodre-content .foodcontainer {
+    width: 80%; } }
+@media screen and (min-width: 1260px) {
+  .foodre-head .foodcontainer {
+    width: 80%; }
+
+  .foodre-content .foodcontainer,
+  .foodre-footer .foodcontainer {
+    width: 70%; } }
+@media screen and (min-width: 1420px) {
+  .foodre-head .foodcontainer {
+    width: 70%; }
+
+  .foodre-content .foodcontainer,
+  .foodre-footer .foodcontainer {
+    width: 60%; } }
+@media screen and (min-width: 1660px) {
+  .foodre-head .foodcontainer {
+    width: 60%; } }
+
+/*# sourceMappingURL=foodreviewer.css.map */

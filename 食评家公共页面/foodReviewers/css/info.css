@@ -1,0 +1,548 @@
+
+
+
+/*PC 端样式代码*/
+
+
+.tab{
+	width: 100%;
+	overflow: hidden;
+}
+.tab_menu{
+	width: 100%;
+	min-height:50px;
+	overflow: hidden;
+	border-bottom:1px solid #71a332;
+}
+.tab_menu ul{
+	overflow: hidden;
+	margin-top: 10px;
+}
+.tab_menu ul li{
+	float: left;
+	width: 82px;
+	height:26px;
+	line-height:26px;
+	font-size: 16px;
+	font-weight:bold;
+	background: #eeeeee;
+	border:1px solid #71a332;
+	border-radius: 3px;
+	color:#71a332;
+	margin-right:21px;
+	text-align: center;
+	cursor: pointer;
+}
+.tab_menu ul li.cur{
+	background: none;
+	border:none;
+}
+.tab_box{
+	width: 100%;
+	overflow: hidden;
+}
+.tab_box .hide1{
+	display: none;
+}
+
+.tab_content1,.tab_content2,.tab_content3,.tab_content4{
+	width: 100%;
+}
+.tab_content1>div{
+	width: 100%;
+	overflow: hidden;
+	margin:10px auto; 
+}
+.tab_content1>div>label{
+	font-size: 14px;
+	color:#595757;
+	float: left;
+	line-height: 28px;
+	letter-spacing: 3px;
+}
+.tab_content1>div p{
+	width: 360px;
+	border-radius:3px;
+	border:1px solid #aaaaaa;
+	height:28px;
+	line-height: 28px;
+	text-indent:4px;
+	background: #eeeeee;
+	float: left;
+	color:#595757;
+	font-size: 14px;
+}
+/*基本信息*/
+.tab_content1 .tab_con1 label{
+	margin-left: 60px;
+}
+.tab_content1 .tab_con2 label{
+	margin-left: 44px;
+}
+.tab_content1 .tab_con2 a{
+	float: left;
+	text-decoration: underline;
+	font-size: 14px;
+	color:#71a332;
+	line-height: 28px;
+	margin-left: 10px;
+}
+.tab_content1 .tab_con2 a:hover{
+	color:#71a332;
+}
+.tab_content1 .tab_con3{
+	height:117px;
+}
+.tab_content1 .tab_con3 label{
+	margin-left: 78px;
+}
+.tab_content1 .tab_con3 img{
+	width: 117px;
+	display: block;
+	float:left;
+	border:0;
+}
+.tab_content1 .tab_con3 a{
+	float: left;
+	text-decoration: underline;
+	font-size: 14px;
+	color:#71a332;
+	margin-left: 10px;
+	margin-top: 102px;
+	display: block;
+}
+.tab_content1 .tab_con4 label{
+	margin-left: 78px;
+}
+.tab_content1 .tab_con4 input{
+	width: 360px;
+	border-radius:3px;
+	border:1px solid #aaaaaa;
+	height:28px;
+	line-height: 28px;
+	text-indent:4px;
+	float: left;
+	color:#595757;
+	font-size: 14px;
+}
+.tab_content1 .tab_con5>label{
+	margin-left: 78px;
+}
+.tab_content1 .dowebok2{
+	width: 335px;
+	overflow: hidden;
+	margin-top: 4px;
+	float: left;
+	margin-left: 2px;
+}
+.tab_content1 .dowebok2 li{
+	float:left;
+	margin-right: 15px;
+}
+
+.tab_content1 .tab_con6>label{
+	margin-left: 78px;
+}
+.tab_content1 .tab_con6 select{
+	width: 100px;
+	height:30px;
+	line-height: 30px;
+	text-indent:10px;
+	border-radius: 3px;
+}
+.tab_content1 .tab_con6 span{
+	height: 30px;
+}
+.tab_content1 .tab_con7 label{
+	margin-left: 60px;
+}
+.tab_content1 .tab_con7 select{
+	width: 28%;
+	height:30px;
+	line-height: 30px;
+	text-indent:10px;
+	border-radius: 3px;
+}
+.tab_content1 .tab_con8>label{
+	margin-left: 78px;
+}
+.tab_content1 .tab_con8 textarea{
+	width: 84.57%;
+	height:75px;
+	border-radius:3px;
+	border:1px solid #aaaaaa;
+}
+.tab_content1 .tab_con9{
+	position: relative;
+	height:100px;
+}
+.tab_content1 .tab_con9_btn{
+	width:81px;
+	height:31px;
+	background: url(imgs/save11.png);
+	border:none;
+	position: absolute;
+	left: 45%;
+	top: 5%;
+}
+
+/*修改密码*/
+.tab_content2>div{
+	width: 100%;
+	overflow: hidden;
+	margin:10px auto; 
+}
+.tab_content2>div>label{
+	font-size: 14px;
+	color:#595757;
+	float: left;
+	line-height: 28px;
+	letter-spacing: 3px;
+}
+.tab_content2>div p{
+	width: 360px;
+	border-radius:3px;
+	border:1px solid #aaaaaa;
+	height:28px;
+	line-height: 28px;
+	text-indent:4px;
+	background: #eeeeee;
+	float: left;
+	color:#595757;
+	font-size: 14px;
+}
+.tab_content2 input{
+	width: 360px;
+	border-radius:3px;
+	border:1px solid #aaaaaa;
+	height:28px;
+	line-height: 28px;
+	text-indent:4px;
+	float: left;
+	color:#595757;
+	font-size: 14px;
+}
+.tab_content2 .tab_con1 label{
+	margin-left: 60px;
+}
+.tab_content2 .tab_con2 label{
+	margin-left: 44px;
+}
+.tab_content2 .tab_con2 a{
+	float: left;
+	text-decoration: underline;
+	font-size: 14px;
+	color:#71a332;
+	line-height: 28px;
+	margin-left: 10px;
+}
+.tab_content2 .tab_con2 a:hover{
+	color:#71a332;
+}
+.tab_content2 .tab_con3 label{
+	margin-left: 26px;
+}
+.tab_content2 .tab_con4{
+	position: relative;
+	height:100px;
+}
+.tab_content2 .tab_con4_btn{
+	width:115px;
+	height:31px;
+	background: url(imgs/tab_con4_btn.png);
+	border:none;
+	position: absolute;
+	left: 20%;
+	top: 5%;
+}
+/*消息中心*/
+.tab_content3>ul li{
+	overflow: hidden;
+	min-height:55px;
+	border-bottom:1px solid #aaaaaa;
+}
+.tab_content3>ul li h4{
+	font-size: 14px;
+	line-height: 34px;
+	float: left;
+	margin-left: 10px;
+}
+.tab_content3 .text_content{
+	width: 70%;
+	float: left;
+	margin-top: 5px;
+	margin-left: 10px;
+}
+.tab_content3>ul li .text_content p{
+	font-size: 14px;
+	margin-left: 10px;
+}
+.tab_content3>ul li a{
+	display: block;
+	float: right;
+	margin-right: 10px;
+	line-height: 55px;
+	font-size: 14px;
+}
+.tab_content3>ul li .text_green{
+	color:#7aa940;
+}
+.tab_content3>ul li .text_red{
+	color:#ff111c;
+}
+.tab_content3>ul li .text_gray{
+	color:#898989;
+}
+.tab_content3 .pagination>.active>a,.tab_content3 .pagination>.active>a:focus, 
+.tab_content3 .pagination>.active>a:hover,.tab_content3 .pagination>.active>span, 
+.tab_content3 .pagination>.active>span:focus,.tab_content3 .pagination>.active>span:hover{
+	color:#fff;
+	background-color:#71a332;
+	border-color:#71a332;
+}
+.tab_content3 .pagination>li>a,.tab_content3 .pagination>li>span{
+	color:#71a332;
+}
+.tab_content3 .pagination>li>a:focus,.tab_content3 .pagination>li>a:hover,.tab_content3 .pagination>li>span:focus,.tab_content3 .pagination>li>span:hover{
+	color:#71a332;
+}
+
+/*红包卡券*/
+.tab_content4>ul li{
+	overflow: hidden;
+	min-height:140px;
+	border-bottom:1px solid #aaaaaa;
+}
+.tab_content4>ul li h4{
+	font-size: 14px;
+	line-height: 115px;
+	float: left;
+	margin-left: 10px;
+	width: 20px;
+}
+.tab_content4 .text_content{
+	width: 95%;
+	float: right;
+	margin-top: 5px;
+	overflow: hidden;
+}
+.tab_content4>ul li .text_content>div{
+	float: left;
+}
+.tab_content4>ul li .text_content .text_box1{
+	width: 60%;
+	margin-top: 5px;
+}
+.tab_content4>ul li .text_content .text_box1 img{
+	width: 100%;
+	border:0;
+}
+.tab_content4>ul li .text_content .text_box2{
+	margin-top:5px;
+	margin-left: 5%;
+	width: 13.5%;
+}
+.tab_content4>ul li .text_content .text_box2 img{
+	width: 92px;
+	border:0;
+}
+.tab_content4>ul li .text_content .text_box2 p{
+	margin-top: 7px;
+	font-size: 14px;
+	color:#595757;
+}
+.tab_content4>ul li .text_content .text_box3{
+	margin-top:5px;
+	width: 18%;
+}
+.tab_content4>ul li .text_content .text_box3 p{
+	margin-top: 45px;
+	font-size: 14px;
+	color:#595757;
+}
+.tab_content4>ul li .text_content .text_box3 a{
+	display: block;
+	font-size: 14px;
+}
+.tab_content4>ul li .text_red{
+	color:#ff111c;
+}
+.tab_content4 .pagination>.active>a,.tab_content4 .pagination>.active>a:focus, 
+.tab_content4 .pagination>.active>a:hover,.tab_content4 .pagination>.active>span, 
+.tab_content4 .pagination>.active>span:focus,.tab_content4 .pagination>.active>span:hover{
+	color:#fff;
+	background-color:#71a332;
+	border-color:#71a332;
+}
+.tab_content4 .pagination>li>a,.tab_content4 .pagination>li>span{
+	color:#71a332;
+}
+.tab_content4 .pagination>li>a:focus,.tab_content4 .pagination>li>a:hover,.tab_content4 .pagination>li>span:focus,.tab_content4 .pagination>li>span:hover{
+	color:#71a332;
+}
+
+
+
+/*移动 端样式代码*/
+@media screen and (max-width: 768px){
+/*menu——tab*/
+.tab_menu ul li{
+	width: 23%;
+	font-size: 1em;
+	margin-right:5px;
+
+}
+
+/*基本信息*/
+.tab_content1>div{
+	width: 100%;
+}
+.tab_content1>div>label{
+	font-size: 12px;
+}
+.tab_content1 .tab_con1 label{
+	margin-left: 15px;
+}
+.tab_content1>div p{
+	width:50%;
+	font-size: 0.8em;
+}
+.tab_content1 .tab_con2 label{
+	margin-left: 0px;
+
+}
+.tab_content1 .tab_con2 a{
+	font-size: 12px;
+	margin-left: 2px;
+}
+.tab_content1 .tab_con3 label,.tab_content1 .tab_con4 label,.tab_content1 .tab_con5>label,
+.tab_content1 .tab_con6 label,.tab_content1 .tab_con8 label{
+	margin-left: 30px;
+}
+.tab_content1 .tab_con4 input{
+	width: 60%;
+}
+.tab_content1 .dowebok2{
+	width: 60%;
+}
+.tab_content1 .tab_con6 select{
+	width: 16%;
+	text-indent: 0;
+	font-size: 12px;
+}
+.tab_content1 .tab_con7 label{
+	margin-left: 15px;
+}
+.tab_content1 .tab_con7 select{
+	width: 25%;
+	text-indent: 0;
+	font-size: 12px;
+}
+.tab_content1 .tab_con8 textarea{
+	width:60%;
+}
+
+
+/*修改密码*/
+.tab_content2>div>label{
+	font-size: 12px;
+}
+.tab_content2 .tab_con1 label{
+	margin-left: 30px;
+}
+.tab_content2 .tab_con2 label{
+	margin-left: 15px;
+}
+.tab_content2 .tab_con3 label{
+	margin-left: 0px;
+}
+.tab_content2>div p{
+	width:50%;
+	font-size: 0.8em;
+}
+.tab_content2>div input{
+	width:50%;
+	font-size: 0.8em;
+}
+.tab_content2 .tab_con2 a{
+	font-size: 12px;
+	margin-left: 2px;
+}
+.tab_content2 .tab_con4_btn{
+	left: 85px;
+}
+/*消息中心*/
+
+.tab_content3 .text_content{
+	width:60%;
+}
+.tab_content3>ul li{
+	height:auto;
+}
+.tab_content3>ul li .text_content p{
+	font-size: 12px;
+	margin-left: 5px;
+}
+.tab_content3>ul li a{
+	margin-right: 0px;
+	font-size: 12px;
+}
+.tab_content3 .pagination>li>a,.tab_content3 .pagination>li>span{
+	padding:5px 5px;
+}
+
+/*红包卡券*/
+
+.tab_content4 .text_content{
+	width: 85%;
+}
+.tab_content4>ul li{
+	min-height:120px;
+}
+.tab_content4>ul li h4{
+	line-height: 35px;
+}
+.tab_content4>ul li .text_content>div{
+	float:left;
+}
+.tab_content4>ul li .text_content .text_box1{
+	margin-top: 5px;
+	width: 95%;
+}
+.tab_content4>ul li .text_content .text_box1 img{
+	width: 100%;
+	border:0;
+}
+.tab_content4>ul li .text_content .text_box2{
+	margin:5px 0 0 10px;
+	width: 35%;
+}
+.tab_content4>ul li .text_content .text_box2 img{
+	width: 25%;
+	border:0;
+	margin-left:30px;
+}
+.tab_content4>ul li .text_content .text_box2 p{
+	margin-top: 7px;
+	font-size: 12px;
+	color:#595757;
+}
+.tab_content4>ul li .text_content .text_box3{
+	margin:5px 0 0 10px;
+	width: 50%;
+}
+.tab_content4>ul li .text_content .text_box3 p{
+	margin-top: 5px;
+	font-size: 12px;
+	color:#595757;
+}
+.tab_content4>ul li .text_content .text_box3 a{
+	display: block;
+	font-size: 12px;
+}
+.tab_content4 .pagination>li>a,.tab_content4 .pagination>li>span{
+	padding:5px 5px;
+}
+
+}
+

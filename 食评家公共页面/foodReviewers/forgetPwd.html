@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>食评家</title>
+<meta http-equiv="imagetoolbar" content="no" />
+<meta http-equiv="pragma" content="no-cach" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="HandheldFriendly" content="true" />
+<link rel="shortcut icon" type="images/x-icon" href="css/images/ico/favicon.ico">
+<link href="css/foodRelogin.css" rel="stylesheet">
+</head>
+<body>
+    <img src="css/images/login/loginbg.jpg" class="loginBg">
+    <div class="loginBox">
+    	<div class="logo">
+    		<span class="iconfont logotext">&#xe602;</span>
+            <span class="iconfont logoslogen">&#xe610;</span>
+    	</div>
+    	<div class="loginForm">
+    		<div class="loginTab clearfix" id="loginTab">
+    			<ul>
+    				<li style="width:100%">密码更新</li>
+    			</ul>
+    		</div>
+    		<div class="loginTabBox clearfix">
+    			<div class="loginLeft" id="loginLeft">
+
+        			<!--密码更新-->
+        			<div class="loginTab2" style="display:block;">
+        				<div class="formItem">
+        					<input type="number" class="telNumNew" placeholder="请输入注册时的手机号">
+        				</div>
+        				<div class="formItem">
+        					<input type="number" class="telNumcheckNew" placeholder="手机验证码">
+        					<span class="checknumBtn">获取</span>
+        				</div>
+                        <div class="formItem">
+                            <input type="password" class="passwordNew" placeholder="输入新密码">
+                        </div>
+                        <div class="formItem">
+                            <input type="password" class="passwordNew" placeholder="确认新密码">
+                        </div>
+                        <div class="error" id="errorForgotpwd"></div>
+        				<div class="loginBtnbox">
+        					<a class="loginbtn" id="forgotpwdBtn" href="#">更新密码并登录</a>
+        				</div>
+        			</div>
+        			<!--/密码更新-->
+    			</div>
+
+    			<div class="loginRight">
+    				<img src="css/images/qrcode.jpg" class="qrcode">
+    				<img src="css/images/qrcodetext.png" class="qrcodetext">
+    			</div>
+    		</div>
+    	</div>
+    </div>
+
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/respond.min.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,372 @@
+
+/*PC 端样式代码*/
+
+/*列表部分*/
+*{
+	font-family: "微软雅黑"
+}
+.tousu_title{
+	width: 100%;
+	height:50px;
+	overflow: hidden;
+	border-bottom:1px solid #71a332;
+}
+.tousu_title>p{
+	float: left;
+	color:#71a332;
+	font-size: 16px;
+	line-height: 50px;
+	height:50px;
+	margin-left:10px;
+}
+.tousu_title>input{
+	float:right;
+	width: 117px;
+	height:31px;
+	background: url(imgs/tousu_list_btn1.jpg);
+	border:none;
+	margin:9px 50px 0 0;
+}
+
+.tousu_content_box li{
+	width: 100%;
+	overflow:hidden;
+	min-height: 120px;
+	border-bottom:1px solid #aaaaaa;
+}
+.tousu_content_box li>h4{
+	font-size: 14px;
+	line-height: 100px;
+	float: left;
+	margin-left: 10px;
+}
+.tousu_content{
+	float:left;
+	overflow:hidden;
+	width:93%;
+	margin-left:15px;
+}
+.tousu_content_inner1{
+	float:left;
+	width:45%;
+	margin-top: 5px;
+}
+.tousu_content_inner2{
+	float:left;
+	width:29%;
+	margin-top:29px;
+}
+.tousu_content_inner3{
+	float:right;
+	width:25%;
+}
+.tousu_content_inner_text{
+	overflow:hidden;
+	line-height:24px;
+}
+.tousu_content_inner_text label{
+	font-size: 16px;
+	color:#595757;
+	float:left;
+	font-weight:normal;
+}
+.tousu_content_inner_text p{
+	font-size: 16px;
+	color:#595757;
+	float:left;
+	margin-right: 10px;
+}
+.tousu_content_inner_text span{
+	font-size: 16px;
+	color:#595757;
+	float:left;
+	font-weight:bold;
+	margin-right: 10px;
+}
+.tousu_content_inner3 a{
+	display: block;
+	float:left;
+	margin-top: 50px;
+	width: 78px;
+	height: 25px;
+	line-height:25px;
+	font-size: 16px;
+	background: #eeeeee;
+	border:1px solid #71a332;
+	border-radius: 3px;
+	color:#71a332;
+	text-align: center;
+}
+.tousu_content_inner3 a:hover,.tousu_content_inner3 a:focus{
+	color:#71a332;
+}
+
+/*分页*/
+.foodre-content .pagination>.active>a,.foodre-content .pagination>.active>a:focus, 
+.foodre-content .pagination>.active>a:hover,.foodre-content .pagination>.active>span, 
+.foodre-content .pagination>.active>span:focus,.foodre-content .pagination>.active>span:hover{
+	color:#fff;
+	background-color:#71a332;
+	border-color:#71a332;
+}
+.foodre-content .pagination>li>a,.foodre-content .pagination>li>span{
+	color:#71a332;
+}
+.foodre-content .pagination>li>a:focus,.foodre-content .pagination>li>a:hover,.foodre-content .pagination>li>span:focus,.foodre-content .pagination>li>span:hover{
+	color:#71a332;
+}
+
+/*提交投诉页面部分*/
+.tousu_title1{
+	width: 100%;
+	height:30px;
+	overflow: hidden;
+	border-bottom:1px solid #71a332;
+	margin-bottom: 20px;
+}
+.tousu_title1>p{
+	float: left;
+	color:#71a332;
+	font-size: 16px;
+	line-height: 30px;
+	height:30px;
+	margin-left:10px;
+}
+.back{
+	font-size:16px;
+	color:#71a332;
+	display: block;
+	margin-top: 17px;
+}
+.back:hover{
+	color:#71a332;
+}
+	.tousu_text_box{
+		width:100%;
+		overflow: hidden;
+		margin:10px 0;
+	}
+	
+	.tousu_text_box label{
+		float: left;
+		font-weight:normal;
+		padding-left: 35px;
+		line-height: 30px;
+	}
+	.tousu_text_box img{
+		width: 72px;
+		height:72px;
+		display: block;
+		float:left;
+	}
+	.tousu_text_box1{
+		width:100%;
+		overflow: hidden;
+		margin:15px 0;
+	}
+	.tousu_text_box1 .ts_t{
+		float: left;
+		width: 120px;
+		font-weight:normal;
+		padding-left: 35px;
+		line-height: 30px;
+	}
+	.tousu_text_box a{
+		font-size: 14px;
+		color:#fe010d;
+		float:left;
+		margin-left:20px;
+		line-height: 30px;
+		text-decoration: underline;
+	}
+	.tousu_text_box a:hover,.tousu_text_box a:focus{
+		color:#fe010d;
+	}
+	.tousu_text1{
+		min-width:140px;
+		height:30px;
+		line-height: 30px;
+		float:left;
+		border:1px solid #a9aeb1;
+		border-radius:5px;
+		margin-right: 15px;
+		padding-left: 10px;
+	}
+	.tousu_text2{
+		width:300px;
+		height:30px;
+		line-height: 30px;
+		float:left;
+		border:1px solid #a9aeb1;
+		border-radius:5px;
+		padding-left: 10px;
+	}
+	.tousu_text3{
+		width:85%;
+		min-height:60px;
+		line-height: 30px;
+		float:left;
+		border:1px solid #a9aeb1;
+		border-radius:5px;
+		padding-left: 10px;
+	}
+	.tousu_text_box .tousu_text4{
+		padding-left:21px;
+	}
+	.tousu_text_box .tousu_text5{
+		padding-left:49px;
+	}
+	.tousu_text6_box{
+		float: left;
+		overflow:hidden;
+	}
+	.tousu_text6_box select{
+		padding-left: 5px;
+	}
+	.tousu_text6{
+		min-width:140px;
+		height:30px;
+		line-height: 30px;
+		float:left;
+		border:1px solid #a9aeb1;
+		border-radius:5px;
+		margin-right: 15px;
+		padding-left: 10px;
+	}
+	.zt_box{
+		overflow:hidden;
+		float: left;
+		line-height: 30px;
+	}
+	.zt_box li{
+		float: left;
+		overflow:hidden;
+	}
+	.zt_box li img{
+		float: left;
+		display: block;
+		width: 23px;
+		height:23px;
+		margin-top: 3px;
+	}
+	.zt_box li p{
+		float: left;
+		margin:0 10px;
+	}
+	.tousu_btn_box{
+		width: 100%;
+		height:100px;
+	}
+	.tousu_btn1{
+		width:114px;
+		height:31px;
+		background: url(imgs/tousu_btn1.jpg);
+		border:none;
+		margin:0 auto;
+		display: block;
+	}
+	.tousu_btn2{
+		margin-top: 50px;
+	}
+	.tousu_text_box .tousu_btn2{
+		margin-left: 10px;
+	}
+	.tousu_text_box .tousu_btn3{
+		margin-left: 20px;
+	}
+
+
+/*移动 端样式代码*/
+@media screen and (max-width: 768px){
+	/*列表部分*/
+	.tousu_title>input{
+		margin-right:0;
+	}
+	.tousu_content{
+		width:85%;
+	}
+	.tousu_content>div{
+		float:left;
+		width:100%;
+		margin-top: 5px;
+	}
+	.tousu_content_inner2{
+		float:left;
+		width:29%;
+	}
+	.tousu_content_inner3{
+		float:right;
+		width:25%;
+	}
+	.tousu_content_inner3 a{
+		margin-top: 0;
+		margin-bottom: 10px;
+	}
+	.tousu_content_inner_text label{
+		font-size: 14px;
+	}
+	.tousu_content_inner_text p{
+		font-size: 14px;
+		margin-right: 5px;
+	}
+	.tousu_content_inner_text span{
+		font-size: 14px;
+	}
+	.tousu_content_inner3 a{
+		font-size: 14px;
+	}
+	.foodre-content .pagination>li>a,.tab_content3 .pagination>li>span{
+	padding:5px 5px;
+	}
+	/*回复页面*/
+	.tousu_text_box label{
+		font-size: 14px;
+		padding-left: 13px;
+	}
+
+	.tousu_text1{
+		min-width:32%;
+		margin-right:5px;
+	}
+	.tousu_text2{
+		width: 65%;
+	}
+	.tousu_text3{
+		width: 65%;
+	}
+	.tousu_text_box .tousu_text4{
+		padding-left:0px;
+	}
+	.tousu_text_box .tousu_text5{
+		padding-left:27px;
+	}
+	.tousu_text6_box{
+		float:left;
+		overflow:hidden;
+		width: 69%;
+	}
+	.tousu_text6{
+		min-width: 46%;
+		margin-right: 5px;
+	}
+	.tousu_text_box a{
+		margin-left:32%;
+	}
+	.zt_box{
+		width: 65%;
+	}
+	.tousu_text_box .tousu_btn3{
+		margin-left: 0px;
+	}
+
+
+	
+
+}
+
+
+
+
+
+
+

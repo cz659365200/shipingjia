@@ -1,0 +1,679 @@
+@charset "utf-8";
+
+@import url("reset.css");
+
+@import url("iconfont/iconfont.css");
+
+
+$greenColor:#70a427;
+$whiteColor:#fff;
+
+$foodheadHeight:60px;
+$foodheadlogoWidth:200px;
+$foodheaduserWidth:200px;
+$ntitleHeight:60px;
+
+$fontTitleColor:#333;
+$fontColor:#666;
+$fontDesColor:#999;
+
+$borderColor:#bbb;
+$listHover:#f4f4f4;
+
+@mixin textoverflow(){
+	text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@mixin triangle($trianglewidth:10px,$triangleColor1:transparent,$triangleColor2:$whiteColor){
+	width:0;
+	height:0;
+	overflow:hidden;
+	border-left:$trianglewidth solid $triangleColor1;
+	border-right:$trianglewidth solid $triangleColor1;
+	border-bottom:$trianglewidth solid $triangleColor2;
+}
+
+.foodcontainer{
+	width:60%;
+	margin:0 auto;
+	position:relative;
+}
+.foodre-head{
+	height:$foodheadHeight;
+	border-bottom:1px solid $greenColor;
+	.foodcontainer{
+		height: 100%;
+	}
+}
+
+.foodmenulist{
+	display: none;
+}
+.foodmenulist,
+.foodheadlogo,
+.foodheaduser{
+	position:absolute;
+	top:0;
+	bottom:0;
+}
+.foodheadMenu{
+	position:absolute;
+	top:0;
+}
+.foodheadlogo{
+	left: 0;
+	width:$foodheadlogoWidth;
+	text-align:center;
+	span{
+		vertical-align:middle;
+		display:block;
+	}
+	.logotext{
+		margin-top:7px;
+		font-size: 27px;
+		margin-bottom: 5px;
+		color:$greenColor;
+	}
+	.logoslogen{
+		font-size: 12px;
+	}
+}
+
+.foodheadMenu{
+	left:$foodheadlogoWidth;
+	right:$foodheaduserWidth;
+	ul{
+		float:left;
+		li{
+			float:left;
+			line-height:$foodheadHeight;
+			a{
+				padding:0 15px;
+				display:block;
+				color:$greenColor;
+				&:active,
+				&:hover {
+					color:lighten($greenColor,10%);
+					text-decoration:none;
+				}
+			}
+		}
+	}
+}
+
+.foodheaduser{
+	right:0;
+	width:$foodheaduserWidth;
+	text-align:right;
+	line-height:$foodheadHeight;
+	cursor:pointer;
+	span{
+		vertical-align:top;
+		display:inline-block;
+	}
+	.userimg{
+		margin-right:5px;
+		img{
+			width:30px;
+			height:30px;
+		}
+	}
+	.usernamearea{
+		max-width:120px;
+		@include textoverflow;
+	}
+	.down{
+		color:$fontColor;
+		margin-right:5px;
+	}
+	.userbox{
+		&:hover,
+		&:active{
+			.userFun{
+				display:block;
+			}
+		}
+	}
+	.userFun{
+		position:absolute;
+		top:$foodheadHeight;
+		width:120px;
+		right:0;
+		z-index:2;
+		background:$greenColor;
+		display:none;
+		&:before {
+			content:'';
+			@include triangle($triangleColor2:$greenColor);
+			position:absolute;
+			right:30px;
+			top:- 10px;
+		}
+		>li{
+			line-height:normal;
+			text-align:left;
+			a{
+				color:$whiteColor;
+				display:block;
+				margin: 0 10px;
+			    border-top: 1px solid #bbb;
+			    padding: 10px 0;
+				.iconfont {
+					font-size:20px;
+					margin-right:10px;
+				}
+				&:hover,
+				&:active{
+					color:darken($whiteColor,10%);
+					text-decoration:none;
+				}
+			}
+			&:first-child a{
+					border-top:0;
+				}
+		}
+	}
+}
+.foodre-content{
+	position:relative;
+}
+.traceCodeBox{
+	background:url(images/traceCodebg.png) no-repeat;
+	width:370px;
+	height:450px;
+	position:absolute;
+	right:10%;
+	top:0;
+	z-index:1;
+	>p{
+		font-size:20px;
+		width:90%;
+		margin:35% auto 0 auto;
+	}
+	.traceCodeArea{
+		height:40px;
+		background:$whiteColor;
+		position:relative;
+		width:90%;
+		margin:20px auto;
+		border: 1px solid $greenColor;
+	    border-radius: 6px;
+	    overflow: hidden;
+		box-sizing: border-box;
+		input{
+			width: 100%;
+		    border: 0;
+		    margin: 0;
+		    font-size: 16px;
+		    box-sizing: border-box;
+		    padding: 11px 110px 11px 10px;
+		}
+		.searchTeam{
+			position:absolute;
+			right:0px;
+			top:0;
+			bottom:0;
+			vertical-align:middle;
+			font-size:28px;
+			color:$whiteColor;
+			background:$greenColor;
+			font-size: 23px;
+	    	line-height: 35px;
+			.divisionline{
+				vertical-align:top;
+			}
+			.iconfont{
+				font-size:26px;
+				color:$whiteColor;
+				vertical-align:middle;
+				cursor:pointer;
+				margin-right:8px;
+				margin-left:8px;
+				&:active,
+				&:hover{
+					color:darken($whiteColor,10%);
+				}
+			}
+		}
+	}
+}
+
+.ntitle{
+	text-align:left;
+	vertical-align:middle;
+	line-height:$ntitleHeight;
+	position:relative;
+	color:$greenColor;
+	font-size:18px;
+	.newtitletext{
+		.iconfont{
+			font-size:40px;
+		}
+	}
+	.more{
+		position:absolute;
+		right:0;
+		color:$greenColor;
+		&:hover,
+		&:active{
+			color:lighten($greenColor,10%);
+			text-decoration:none;
+		}
+	}
+	span,label{
+		vertical-align:middle;
+	}
+}
+
+.videoList{
+	ul{
+		float:left;
+		width:100%;
+		li{
+			float:left;
+			width:33.33%;
+			*width:33%;
+			a{
+				display:block;
+				margin:10px;
+				position:relative;
+				height:250px;
+				line-height:250px;
+				background:$listHover;
+				text-align:center;
+				img{
+					max-width:100%;
+					max-height:100%;
+				}
+				>span{
+					position:absolute;
+					left:0;
+					top:0;
+					width:100%;
+					height:100%;
+					font-size: 70px;
+    				text-align: center;
+    				color:$whiteColor;
+				}
+				&:hover,
+				&:active{
+					text-decoration:none;
+				}
+			}
+			.t1,
+			.t2{
+				font-size:16px;
+				margin-top:10px;
+				display:block;
+				margin-left:10px;
+				margin-right:10px;
+				@include textoverflow;
+			}
+			.t2{
+				font-size:14px;
+				margin-bottom:10px;
+				@include textoverflow;
+			}
+		}
+	}
+}
+
+.zixunListArea{
+	width:70%;
+	float:left;
+	>div{
+		margin-right:15px;
+		margin-left:10px;
+		margin-bottom:15px;
+		.ntitle{
+			border-bottom:1px solid $borderColor;
+		}
+	}
+}
+
+.zixunList{
+	ul{
+		float:left;
+		li{
+			float:left;
+			width:50%;
+			*width:49%;
+			a{
+				display:block;
+				margin-right:30px;
+				padding-top:20px;
+				padding-bottom:20px;
+				color:$fontColor;
+				font-size:14px;
+				border-bottom:1px solid $borderColor;
+				p{
+					color:$fontTitleColor;
+					margin-bottom:20px;
+					font-size:16px;
+					@include textoverflow;
+				}
+				img{
+					float:left;
+					width:127px;
+					height:93px;
+				}
+				span{
+					height:76px;
+					overflow:hidden;
+				}
+				span,i{
+					margin-left:145px;
+					display:block;
+					margin-top: 15px;
+				}
+				i{
+					font-style:normal;
+					color:$fontDesColor;
+				    text-align: right;
+				}
+				&:hover,
+				&:active{
+					background:$listHover;
+					color:$fontColor;
+					text-decoration:none;
+				}
+			}
+			&:nth-child(even){
+				a{
+					margin-right:0;
+				}
+			}
+		}
+	}
+}
+
+.propagandachart{
+	width:30%;
+	*width:29%;
+	float:right;
+	>div{
+		margin-left:25px;
+		margin-right:10px;
+		text-align:center;
+		margin-top:$ntitleHeight;
+		ul li{
+			margin-bottom:10px;
+			a{
+				display:block;
+				text-align:center;
+				img{
+					max-width:100%;
+				}
+			}
+		}
+	}
+}
+
+.foodre-footer{
+	background:$greenColor;
+	.footerline{
+		border-bottom:1px solid $borderColor;
+		padding:20px 0;
+		>ul{
+			float:left;
+			width:100%;
+			li{
+				float:left;
+				width:20%;
+				p,a{
+					margin-right:2%;
+					display:block;
+					color:$whiteColor;
+					line-height:40px;
+					&:hover,
+					&:active{
+						color:$whiteColor;
+					}
+				}
+				>img{
+					width:100px;
+					height:100px;
+				}
+			}
+		}
+	}
+	.footercopayright{
+		text-align:center;
+		padding:15px 0;
+		color:$whiteColor;
+	}
+}
+
+@media screen and (max-width:767px){
+	.foodre-content{
+		.ntitle{
+			line-height:$ntitleHeight - 10;
+			.iconfont{
+				font-size:30px;
+			}
+		}
+		.videoList ul li{
+			width:50%;
+			*width:49%;
+			a{
+				height:120px;
+				line-height:120px;
+			}
+		}
+		.zixunListArea,
+		.propagandachart{
+			float:none;
+			width:100%;
+			>div{
+				margin:10px 0;
+			}
+		}
+		.zixunList ul li{
+			width:100%;
+			a{
+				margin-right:0;
+			}
+		}
+	}
+	.footerline{
+		display:none;
+	}
+}
+
+@media screen and (max-width:1003px) {
+	.foodre-head{
+		background:$greenColor;
+		.foodcontainer{
+			width:100%;
+		}
+		.foodmenulist{
+			display:block;
+			color:$whiteColor;
+			z-index: 2;
+		    line-height: $foodheadHeight;
+		    font-size: 40px;
+		    margin-left: 10px;
+		}
+		.userimg{
+			margin-right:10px;
+		}
+		.foodheadlogo{
+			width:100%;
+		}
+		.usernamearea,
+		.down{
+			display:none;
+		}
+		.logotext{
+			color:$whiteColor;
+		}
+		.logoslogen{
+			color:darken($whiteColor,10%);
+		}
+		.foodheadMenu{
+			display:none;
+			left:0;
+			right:0;
+			top:$foodheadHeight;
+			z-index:2;
+			&:before {
+				content:'';
+				@include triangle;
+				position:absolute;
+				left:20px;
+				top:- 9px;
+			}
+			ul{
+				float:none;
+				background:rgba($whiteColor,.9);
+			}
+			li{
+				float:none;
+				line-height:$foodheadHeight - 16;
+    			a{
+					border-top: 1px solid $borderColor;
+					margin: 0 20px;
+    			}
+    			&:first-child {
+    				a{
+    					border-top:0;
+    				}
+    			}
+    			&:active {
+    				background:darken($whiteColor,5%);
+    			}
+			}
+		}
+	}
+
+	.foodre-content .foodcontainer,
+	.foodre-footer .foodcontainer{
+		width:90%;
+	}
+
+	.ntitle{
+		border-bottom:1px solid $borderColor;
+	}
+	.ntitle .more{
+		span + span{
+			display:none;
+		}
+		span:first-child {
+			padding:1px 5px;
+			border:2px solid $greenColor;
+			border-radius: 6px;
+		}
+	}
+
+	.videoList ul li{
+		a{
+			height:200px;
+			line-height:200px;
+			> span{
+				font-size:50px;
+			}
+		}
+	}
+	.zixunListArea,
+	.propagandachart{
+		float:none;
+		width:100%;
+		>div{
+			margin:10px 0;
+		}
+	}
+	.propagandachart {
+		>div{
+			ul li{
+				margin-bottom:10px;
+				float:left;
+				width:33.3%;
+				a{
+					margin:0 4px;
+					img{
+						max-width:100%;
+					}
+				}
+			}
+		}
+	}
+	.traceCodeBox{
+		background:none;
+		position: relative;
+	    width: 100%;
+	    height: 44px;
+	    right:0;
+		>p{
+			display:none;
+		}
+		.traceCodeArea{
+			height:100%;
+			background:$whiteColor;
+			position:relative;
+			width:100%;
+			margin:0;
+			border-radius:0;
+			border:0;
+			input{
+			    padding-top: 13px;
+			    padding-bottom:13px;
+			}
+			.searchTeam{
+				color:$greenColor;
+				background:#fff;
+		    	line-height: 39px;
+				.iconfont{
+					font-size:30px;
+					color:$greenColor;
+					&:active,
+					&:hover{
+						color:lighten($greenColor,5%);
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@media screen and (min-width:1004px) {
+	.foodre-head .foodcontainer{
+		width:100%;
+	}
+	.foodheadMenu{
+		display:block!important;
+	}
+	.foodre-footer .foodcontainer,
+	.foodre-content .foodcontainer{
+		width:80%;
+	}
+}
+
+
+@media screen and (min-width:1260px) {
+	.foodre-head .foodcontainer{
+		width:80%;
+	}
+	.foodre-content .foodcontainer,
+	.foodre-footer .foodcontainer{
+		width:70%;
+	}
+}
+
+@media screen and (min-width:1420px) {
+	.foodre-head .foodcontainer{
+		width:90%;
+	}
+	.foodre-content .foodcontainer,
+	.foodre-footer .foodcontainer{
+		width:60%;
+	}
+}
+
+@media screen and (min-width:1660px) {
+	.foodre-head .foodcontainer{
+		width:90%;
+	}
+}
